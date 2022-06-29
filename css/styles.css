@@ -1,0 +1,126 @@
+:root{
+    /* ----COLOURS---- */
+    --main-hue-color: 300;
+
+    --main-color: hsl(var(--main-hue-color), 65%, 31%);
+    --lighter-main-color: hsl(var(--main-hue-color), 61%, 76%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body{
+    background-color: #000;
+}
+/* TRACK DETAILS */
+.blur-background{
+    width: 100%;
+    height: 83vh;
+    filter: blur(12px);
+    -webkit-filter: blur(12px);
+    /* background-color: #000; */
+    opacity: .5;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.track-details{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 25px;
+}
+.track-img{
+    width: 280px;
+    height: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.track-title{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff
+}
+.artist{
+    font-size: 1.05rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: var(--main-color);
+}
+
+/* TRACK BUTTONS AND LENGTH */
+.track-btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    gap: 30px;
+}
+.current-time, .total-time{
+    font-size: .87rem;
+}
+.song-length, .next-prev{
+    display: flex;
+    flex-direction: row;
+}
+.song-length{
+    gap: 1.3rem;
+}
+.song-length input{
+    cursor: pointer;
+}
+.next-prev{
+    gap: 5rem;
+    margin-top: 20px;
+}
+.next-prev i{
+    cursor: pointer;
+}
+.timer{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    opacity: .7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    width: 60%;
+    border-radius: 10px;
+    background-color: var(--main-color);
+}
+.timer::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: var(--lighter-main-color);
+    border-radius: 50%;
+}
+.timer:hover{
+    opacity: 1;
+}
+.play-pause>i{
+    color: var(--main-color);
+}
+.fa-fast-backward:hover, .fa-fast-forward:hover{
+    color: #fff;
+}
+
+/* footer */
+footer{
+    margin-top: 5px;
+    position: relative;
+    text-align: center;
+}
+#copy{
+    position: relative;
+    bottom: 0;
+}
+#copy svg>path{
+    fill: var(--main-color);
+}
