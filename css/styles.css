@@ -16,7 +16,7 @@ body{
 /* TRACK DETAILS */
 .blur-background{
     width: 100%;
-    height: 83vh;
+    height: 67vh;
     filter: blur(12px);
     -webkit-filter: blur(12px);
     /* background-color: #000; */
