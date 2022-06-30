@@ -118,7 +118,7 @@ function resetValues(){
 
 // Function to play track
 function playTrack(){
-    current_track.play;
+    current_track.play();
     isPlaying = true;
 
     play_pause.innerHTML = '<i class="fa fa-pause-circle fa-3x" aria-hidden="true"></i>';
@@ -126,7 +126,7 @@ function playTrack(){
 
 // Function to pause track
 function pauseTrack(){
-    current_track.pause;
+    current_track.pause();
     isPlaying = false;
 
     play_pause.innerHTML = '<i class="fa fa-play-circle fa-3x" aria-hidden="true"></i>';
