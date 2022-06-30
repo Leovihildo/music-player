@@ -59,31 +59,31 @@ let track_list = [
         title: "Dangerously",
         artist: "Charlie Puth",
         cover: "Songs/Track_images/dangerously.jpg",
-        path: "https://soundcloud.com/charlieputh/dangerously-1?utm_source=mobi&utm_campaign=social_sharing&utm_terms=mobi_google_one_tap.control"
+        path: "Songs/Charlie Puth - Dangerously Official Audio.mp3"
     },
     {
         title: "FIA",
         artist: "Davido",
-        cover: "../Songs/Track_images/fia.jpg",
-        path: "../Songs/Davido - FIA (Official Music Video).mp3"
+        cover: "Songs/Track_images/fia.jpg",
+        path: "Songs/Davido - FIA (Official Music Video).mp3"
     },
     {
         title: "Again",
         artist: "Wande Coal",
-        cover: "../Songs/Track_images/again.jpg",
-        path: "../Songs/Wande Coal - Again (Official Video).mp3"
+        cover: "Songs/Track_images/again.jpg",
+        path: "Songs/Wande Coal - Again (Official Video).mp3"
     },
     {
         title: "Like I do",
         artist: "Fireboy DML",
-        cover: "../Songs/Track_images/fireboy.jpg",
-        path: "../Songs/Fireboy DML - Like I Do (Audio).mp3"
+        cover: "Songs/Track_images/fireboy.jpg",
+        path: "Songs/Fireboy DML - Like I Do (Audio).mp3"
     },
     {
         title: "Lagos Vibes",
         artist: "Wizkid",
-        cover: "../Songs/Track_images/lagos_vibes.jpeg",
-        path: "../Songs/WizkidLagos Vibes.mp3"
+        cover: "Songs/Track_images/lagos_vibes.jpeg",
+        path: "Songs/WizkidLagos Vibes.mp3"
     }
 ];
 
