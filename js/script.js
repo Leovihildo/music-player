@@ -58,7 +58,7 @@ let track_list = [
     {
         title: "Dangerously",
         artist: "Charlie Puth",
-        cover: "../Songs/Track_images/dangerously.jpg",
+        cover: "Songs/Track_images/dangerously.jpg",
         path: "https://soundcloud.com/charlieputh/dangerously-1?utm_source=mobi&utm_campaign=social_sharing&utm_terms=mobi_google_one_tap.control"
     },
     {
