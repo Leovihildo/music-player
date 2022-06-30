@@ -27,27 +27,11 @@ document.querySelector(".play-pause").addEventListener("click", ()=>{
 });
 
 btn_next.addEventListener('click', function(){
-    if (track_index < (track_list.length-1)){
-        track_index += 1;
-    }
-    else{
-        track_index = 0;
-    }
-
-    loadTrack(track_index);
-    playTrack();
+    nextTrack();
 });
 
 btn_prev.addEventListener('click', function(){
-    if (track_index > 0){
-        track_index -= 1;
-    }
-    else{
-        track_index = track_list.length - 1;
-    }
-
-    loadTrack(track_index);
-    playTrack();
+    prevTrack();
 });
 
 // Creating audio element for the player
@@ -131,6 +115,25 @@ function pauseTrack(){
 
     play_pause.innerHTML = '<i class="fa fa-play-circle fa-3x" aria-hidden="true"></i>';
 }
+
+//function to play next track
+function nextTrack() {
+  if (track_index < track_list.length - 1)
+    track_index += 1;
+  else track_index = 0;
+  loadTrack(track_index);
+  playTrack();
+}
+
+//Function to play previous track
+function prevTrack() {
+  if (track_index > 0)
+    track_index -= 1;
+  else track_index = track_list.length;
+  loadTrack(track_index);
+  playTrack();
+}
+
 
 function seekTo(){
     seekto = current_track.duration * (progress.value / 100);
